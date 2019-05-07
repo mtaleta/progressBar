@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style tyqpe="text/css">
+    *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .step{
+        width: 500px;
+        margin: 50px auto;
+        outline: 1px solid #f00;
+    }
+    .step li{
+        padding: 30px;
+        min-height: 50px;
+        outline: 1px solid #00f;
+        border-left: 10px solid #000;
+        position: relative;
+    }
+    .step li::before{
+        content: '';
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background-color: #000;
+        border-radius: 50%;
+        top: -20px;
+        left: -25px;
+    }
+    .step li:last-child{
+        border-color: transparent;
+    }
+    </style>
+</head>
+
+<body>
+    <ol class="step">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol>
+</body>
+
+</html>
